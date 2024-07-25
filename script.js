@@ -34,5 +34,5 @@ document.getElementById('channel-form').addEventListener('submit', function (eve
 
 // Додавання події на кнопку "View All Channels"
 document.getElementById('view-channels-btn').addEventListener('click', function () {
-    window.location.href = 'https://stasan-minecraft.github.io/youbuz.github.io/file';
+    window.location.href = 'all-channels.php';
 });
