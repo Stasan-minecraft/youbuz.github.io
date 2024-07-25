@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouBuz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to YouBuz</h1>
+    </header>
+    <main>
+        <section id="create-channel">
+            <h2>Create Your Channel</h2>
+            <form id="channel-form" enctype="multipart/form-data">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" required>
+                <span id="nickname-status"></span>
+
+                <label for="avatar">Avatar:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/*" required>
+
+                <button type="submit">Create Channel</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
