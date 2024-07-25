@@ -5,18 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Приклад даних каналів (зазвичай ці дані повинні отримуватися з сервера або бази даних)
     const channels = [
-        { nickname: 'Channel1', avatar: 'path/to/avatar1.png' },
-        { nickname: 'Channel2', avatar: 'path/to/avatar2.png' },
-        { nickname: 'Channel3', avatar: 'path/to/avatar3.png' }
+        { nickname: 'Channel1' },
+        { nickname: 'Channel2' },
+        { nickname: 'Channel3' }
     ];
 
     // Додавання каналів до списку
     channels.forEach(channel => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `
-            <img src="${channel.avatar}" alt="${channel.nickname}'s avatar" class="avatar">
-            <span>${channel.nickname}</span>
-        `;
+        listItem.innerHTML = `<a href="https://stasan-minecraft.github.io/youbuz.github.io/${channel.nickname}">${channel.nickname}</a>`;
         channelsList.appendChild(listItem);
     });
 });
