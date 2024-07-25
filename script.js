@@ -15,24 +15,6 @@ document.getElementById('nickname').addEventListener('input', function () {
     }, 500);
 });
 
-document.getElementById('channel-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    const nickname = document.getElementById('nickname').value;
-    const avatar = document.getElementById('avatar').files[0];
-
-    if (!nickname || !avatar) {
-        alert('Please fill in all fields');
-        return;
-    }
-
-    // Імітація надсилання даних на сервер
-    // Тут ви можете зробити справжній запит для створення каналу
-    console.log('Form submitted', { nickname, avatar });
-
-    alert('Channel created successfully!');
-});
-
-// Додавання події на кнопку "View All Channels"
 document.getElementById('view-channels-btn').addEventListener('click', function () {
     window.location.href = 'all-channels.php';
 });
